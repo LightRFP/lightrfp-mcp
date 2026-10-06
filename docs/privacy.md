@@ -10,7 +10,13 @@ Free-text searches are processed to answer the request, even though raw queries 
 - **PostHog** processes limited operational events: tool name, timing, outcome, bounded error categories, result/link counts, server version and recognized client labels. Request/session identifiers support operational measurement; they are not verified buyer identities. Client labels are self-reported.
 - MCP operational events exclude raw queries, arguments, responses, full URLs, applicant details and credentials. Person profiles and geolocation are disabled, and the analytics IP is suppressed.
 
-Operational records are retained; this service should not be described as having no retained data or as operating entirely in memory. This integration guide does not establish a new fixed retention or deletion commitment.
+## Retention and privacy requests
+
+Operational analytics events currently have no fixed automatic age-based deletion period and may remain for longer than 12 months. Hosting/security records have separate retention by log type and provider configuration. Stateless transport does not mean zero retention.
+
+For access or deletion requests, contact **cyrus@lightrfp.com**, identifying the MCP service. An approximate time, AI client, or request reference can help locate records; do not send credentials, payment information, or a full conversation. Operational identifiers may not identify an individual. The privacy request process addresses identification limits and applicable legal retention requirements; this guide does not promise a new deletion SLA. The AI platform handles requests about its own chat history separately.
+
+See the [MCP privacy notice](https://www.lightrfp.com/privacy-policy#mcp-service) and [MCP service-provider disclosures](https://www.lightrfp.com/legal/subprocessors), including the [Vercel Privacy Notice](https://vercel.com/legal/privacy-notice) and [PostHog Privacy Policy](https://posthog.com/privacy). Those provider notices describe their practices; this guide describes the limited fields sent by this integration.
 
 ## Following a link
 
