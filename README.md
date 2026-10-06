@@ -29,6 +29,8 @@ Try: “Find a New York public adjuster bond. Explain its catalog price and cred
 For an executable example, install Node.js 22 or later and run:
 
 ```sh
+git clone https://github.com/LightRFP/lightrfp-mcp.git
+cd lightrfp-mcp
 node examples/search.mjs
 ```
 

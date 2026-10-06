@@ -3,7 +3,7 @@
 This companion repository documents a hosted service. It does not contain the private deployment implementation, full catalog, raw application forms, or a self-hosting package.
 
 ```mermaid
-flowchart LR
+flowchart TD
     U[User] --> C[AI client]
     C -->|MCP tool call| H[Public HTTPS endpoint]
     H --> G[Traffic and input validation]
